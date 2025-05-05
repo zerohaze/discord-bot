@@ -57,4 +57,4 @@ client.on('interactionCreate', async interaction => {
   if (interaction.commandName === 'habla') {
     const voiceChannel = interaction.member.voice.channel;
     if (!voiceChannel) {
-      return interaction.reply('❌ Debes estar en un canal de voz
+      return interaction.reply('❌ Debes estar en un canal de voz');
