@@ -12,7 +12,10 @@ const {
 } = require('@discordjs/voice');
 const path = require('path');
 
-// Revisión de variable TOKEN
+// 🔍 Mostrar token parcial para debug en Railway
+console.log("🔍 DEBUG TOKEN:", process.env.TOKEN?.slice(0, 10) || "NO DETECTADO");
+
+// Validación del TOKEN
 if (!process.env.TOKEN || process.env.TOKEN.length < 30) {
   console.error('🚨 TOKEN no válido o no definido. Verifique su variable de entorno.');
   process.exit(1);
